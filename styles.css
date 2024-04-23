@@ -6,15 +6,12 @@
 body{
     display: grid;
     place-content: center;
-    
 }
 
-img#poster {
-    position: relative;
-    z-index: 1;
+img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
 }
-
-
 
 
 section{
@@ -27,7 +24,6 @@ hgroup{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
 
