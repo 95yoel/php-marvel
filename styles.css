@@ -1,0 +1,78 @@
+:root{
+    background-color: #333;
+    color: whitesmoke
+}
+body{
+    display: grid;
+    place-content: center;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+hgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
