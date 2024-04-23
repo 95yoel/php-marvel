@@ -1,12 +1,21 @@
 :root{
     background-color: #333;
-    color: whitesmoke
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     display: grid;
     place-content: center;
     
 }
+
+img#poster {
+    position: relative;
+    z-index: 1;
+}
+
+
+
 
 section{
     display: flex;

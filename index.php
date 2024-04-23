@@ -17,15 +17,33 @@
     <meta name="description" content="Next marvel film"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
+    
 </head>
 
 <main>
     <section>
-        <img src="<?= $data["poster_url"];?>" width="300" alt="Logo" style="border-radius:10px;"/>
+        <img id="poster" src="<?= $data["poster_url"];?>" width="300" alt="Logo" style="border-radius:10px;"/>
     </section>
     <hgroup>
-        <h2><?= $data["title"];?>is released in <?= $data["days_until"];?> days</h2>
-        <p>Release date <?= $data["release_date"];?></p>
-        <p>The next marvel film is : <?= $data["following_production"]["title"];?> <small><?= $data["following_production"]["release_date"];?></small></p>
+        <h2><?= $data["title"];?> is released in <?= $data["days_until"];?> days</h2>
+        <p>Release date : <?= $data["release_date"];?></p>
+        <p>The next marvel film is : <?= $data["following_production"]["title"];?> <?= $data["following_production"]["release_date"];?></p>
     </hgroup>
 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    var poster = document.getElementById('poster');
+
+    // Animate with gsap
+    gsap.from(poster, {
+        duration: 1.5, 
+        y: "-100%", 
+        ease: "elastic.out(1, 1)", // bounce effect
+    });
+});
+
+
+</script>
